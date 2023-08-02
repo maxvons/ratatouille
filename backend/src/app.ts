@@ -1,4 +1,4 @@
-import express, { Application, Request, Response, NextFunction } from "express";
+import express, { Request, Response, NextFunction } from "express";
 
 const app = express();
 const port = 3001;
