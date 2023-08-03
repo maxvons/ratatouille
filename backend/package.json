@@ -10,9 +10,9 @@
     "start:dev": "npx nodemon",
     "lint": "eslint src/**/*.ts",
     "format": "eslint src/**/*.ts --fix",
-    "start:docker": "docker run -p 3000:3001 --name my-node-app-container --volume  ${PWD}:/usr/src/app my-node-app",
-    "stop:docker": "docker container stop my-node-app-container",
-    "remove:docker": "docker container rm my-node-app-container",
+    "start:docker": "docker run -p 3000:3001 --name node-app-container --volume  ${PWD}:/usr/src/app node-app",
+    "stop:docker": "docker container stop node-app-container",
+    "remove:docker": "docker container rm node-app-container",
     "clean:docker": "npm run stop:docker && npm run remove:docker"
   },
   "keywords": [],
